@@ -13,13 +13,14 @@ class CreateTestTackTable extends Migration
      */
     public function up()
     {
-        Schema::create('testTask', function (Blueprint $table) {
+        Schema::create('test_tasks', function (Blueprint $table) {
             $table->increments('id');
             $table->smallInteger('code');
             $table->tinyInteger('type');
             $table->enum('status', ["получено", "прочитано", "исправлено"])->default("получено");
             $table->string('application', 20);
             $table->string('message', 1000);
+            $table->nullableTimestamps();
         });
     }
 

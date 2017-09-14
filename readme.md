@@ -10,4 +10,4 @@ after cloning the project, create (empty) and connect the database in a file (.e
 1 composer update
 2 php artisan migrate
 
-переходите в баузер и проверяйте!
+переходите в браузер и проверяйте!

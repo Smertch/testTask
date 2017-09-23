@@ -7,11 +7,15 @@
 
         {{csrf_field()}}
         <div class="form-group">
-            <label for="title">Json:</label>
-            <input class="form-control" type="text" required name="json" id="json">
+            <label for="title">Feedback:</label>
+            <input class="form-control" type="text" name="userName" id="userName" placeholder="User Name*" required autofocus>
+            <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email address*" required
+                   autofocus>
+            <input type="url" id="inputHomepage" name="homepage" class="form-control" placeholder="Homepage">
+            <input type="text" id="inputMsg" name="msg" class="form-control" placeholder="Enter your message*" required
+                   autofocus>
+            <p>*Required fields</p>
         </div>
-
-
         <div class="form-group">
             <button class="btn btn-primary" type="submit">Send</button>
         </div>
